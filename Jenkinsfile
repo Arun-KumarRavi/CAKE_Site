@@ -37,7 +37,7 @@ pipeline {
             steps {
                 withSonarQubeEnv('SonarQube-Server') {
                     sh '''
-                        sonar-scanner \
+                        npx sonarqube-scanner \
                           -Dsonar.projectKey=SP-Cakes-Site \
                           -Dsonar.projectName="SP Cakes & Delight" \
                           -Dsonar.sources=src \
