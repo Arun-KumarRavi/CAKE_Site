@@ -44,7 +44,8 @@ pipeline {
                           -Dsonar.tests=src \
                           -Dsonar.test.inclusions="**/*.test.js" \
                           -Dsonar.exclusions="**/*.test.js,**/node_modules/**" \
-                          -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
+                          -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info \
+                          -Dsonar.qualitygate.wait=true
                     '''
                 }
             }
